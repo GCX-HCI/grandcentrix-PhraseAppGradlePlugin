@@ -25,7 +25,7 @@ phraseApp {
     projectId = "projectId"
     userToken = "userToken"
     destinationDir = file("app/src/main/res/")
-    languages = [new Language("id", "values"), new Language("anotherId", "values-en")]
+    languages = [new Language("phraseapp-en-id-xxx", "values"), new Language("phraseapp-de-id-xxx", "values-de")]
     tags = ["android", "common"]
 }
 ```
@@ -49,7 +49,7 @@ phraseApp {
     projectId.set("projectId")
     userToken.set("userToken")
     destinationDir.set(file("app/src/main/res/"))
-    languages.set(listOf(Language("id", "values"), Language("anotherId", "values-en")))
+    languages.set(listOf(Language("phraseapp-en-id-xxx", "values"), Language("phraseapp-de-id-xxx", "values-de")))
     tags.set(listOf("android", "common"))
 }
 ```
