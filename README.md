@@ -45,7 +45,7 @@ buildscript {
     
 apply(plugin = "net.grandcentrix.phraseapp")
     
-phraseApp {
+configure<PhraseAppExtension> {
     projectId.set("projectId")
     userToken.set("userToken")
     destinationDir.set(file("app/src/main/res/"))
