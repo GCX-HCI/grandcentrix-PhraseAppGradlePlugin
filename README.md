@@ -19,7 +19,7 @@ buildscript {
     }
 }
 
-appply plugin: 'net.grandcentrix.phraseapp'
+apply plugin: 'net.grandcentrix.phraseapp'
 
 phraseApp {
     projectId = "projectId"
@@ -43,7 +43,7 @@ buildscript {
     }
 }
     
-appply(plugin = "net.grandcentrix.phraseapp")
+apply(plugin = "net.grandcentrix.phraseapp")
     
 phraseApp {
     projectId.set("projectId")
