@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/grandcentrix/PhraseAppGradlePlugin.svg?branch=master)](https://travis-ci.org/grandcentrix/PhraseAppGradlePlugin)
 
 # PhraseAppGradlePlugin
-A Gradle plugin for [PhraseApp](phraseapp.com) to receive/download/update strings
+A Gradle plugin for [PhraseApp](https://phraseapp.com) to receive/download/update strings
 in your Android application.
 
 ## Usage
