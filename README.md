@@ -1,3 +1,5 @@
+# DEPRECATED - no longer actively maintained
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Download](https://api.bintray.com/packages/grandcentrix/maven/PhraseAppGradlePlugin/images/download.svg) ](https://bintray.com/grandcentrix/maven/PhraseAppGradlePlugin/_latestVersion)
 [![Build Status](https://travis-ci.org/grandcentrix/PhraseAppGradlePlugin.svg?branch=master)](https://travis-ci.org/grandcentrix/PhraseAppGradlePlugin)
