@@ -9,6 +9,62 @@ in your Android application.
 ## Usage
 You have to apply this plugin into your **top-level** `build.gradle[.kts]` file and 
 set up the `phraseApp` extension:
+
+### GitHub Packages
+
+```groovy
+buildscript {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/grandcentrix/PhraseAppGradlePlugin")
+        }
+    }
+    dependencies {
+        classpath 'net.grandcentrix:phraseappgradleplugin:1.0.0'
+    }
+}
+
+apply plugin: 'net.grandcentrix.phraseapp'
+
+phraseApp {
+    projectId = "projectId"
+    userToken = "userToken"
+    destinationDir = file("app/src/main/res/")
+    languages = [new Language("phraseapp-en-id-xxx", "values"), new Language("phraseapp-de-id-xxx", "values-de")]
+    tags = ["android", "common"]
+}
+```
+
+<details>
+<summary>Kotlin DSL:</summary>
+   
+```kotlin
+buildscript {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/grandcentrix/PhraseAppGradlePlugin")
+        }
+    }
+    dependencies {
+        classpath("net.grandcentrix:phraseappgradleplugin:1.0.0")
+    }
+}
+    
+apply(plugin = "net.grandcentrix.phraseapp")
+    
+configure<PhraseAppExtension> {
+    projectId.set("projectId")
+    userToken.set("userToken")
+    destinationDir.set(file("app/src/main/res/"))
+    languages.set(listOf(Language("phraseapp-en-id-xxx", "values"), Language("phraseapp-de-id-xxx", "values-de")))
+    tags.set(listOf("android", "common"))
+}
+```
+
+</details>
+
+### JCenter (deprecated)
+
 ```groovy
 buildscript {
     repositories {
