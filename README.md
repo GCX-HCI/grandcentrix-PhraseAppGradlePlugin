@@ -18,7 +18,7 @@ set up the `phraseApp` extension:
 buildscript {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/GCX-HCI/PhraseAppGradlePlugin")
+            url = uri("https://maven.pkg.github.com/GCX-HCI/grandcentrix-PhraseAppGradlePlugin")
         }
     }
     dependencies {
@@ -44,7 +44,7 @@ phraseApp {
 buildscript {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/GCX-HCI/PhraseAppGradlePlugin")
+            url = uri("https://maven.pkg.github.com/GCX-HCI/grandcentrix-PhraseAppGradlePlugin")
         }
     }
     dependencies {
